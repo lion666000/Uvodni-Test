@@ -28,9 +28,27 @@ public class SpravaMazlicku {
     }
 
     public void hledaSeNemo(ArrayList<Mazlicek>mazlicci){
+        boolean z = false;
         System.out.println("Jméno mazlíčka:");
         String Nemo = sc.nextLine();
+        for (Mazlicek mazlicek : mazlicci){
+            if (Nemo.equals(mazlicek.getJmeno())){
+                mazlicek.tortString();
+                z = true;
+            }
+            else if (z==false){
+                System.out.println("Mazlíček nebyl nalezen");
+            }
+        }
+    }
 
-
+    public void druhovec(ArrayList<Mazlicek>mazlicci){
+        System.out.println("Druh mazlíčka:");
+        String druh = sc.nextLine();
+        for (Mazlicek mazlicek : mazlicci){
+            if (druh.equals(mazlicek.getDruh())){
+                mazlicek.tortString();
+            }
+        }
     }
 }

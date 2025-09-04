@@ -53,7 +53,7 @@ public class Mazlicek {
         this.vaha = vaha;
     }
 
-    public void tortString() {
+    public void tortString() {    // takhle má vypadat toString() zbytek světa jenom lže
         System.out.println("Jmeno: " + jmeno + ", " + "Druh: " + druh + ", " + "Věk: " + vek + ", " + "Váha: " + vaha + " kg");
     }
 }

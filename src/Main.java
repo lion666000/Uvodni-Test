@@ -20,6 +20,9 @@ public class Main {
                     System.out.println("1 - Vypsat všechny mazlíčky");
                     System.out.println("2 - Vypsat průměr věku mazlíčků");
                     System.out.println("3 - Vypsat průměr váhy mazlíčků");
+                    System.out.println("4 - Vyhledat mazlíčka podle jména");
+                    System.out.println("5 - Vypsat mazlíčky určitého druhu");
+
 
                     int y = sc.nextInt();
                     sc.nextLine();
@@ -38,6 +41,15 @@ public class Main {
                             SpravaMazlicku mlem2 = new SpravaMazlicku();
                             mlem2.vypocetPrumerneVahy(mazlicci);
                             break;
+                        case 4:
+                            SpravaMazlicku mlem3 = new SpravaMazlicku();
+                            mlem3.hledaSeNemo(mazlicci);
+                            break;
+                        case 5:
+                            SpravaMazlicku mlem4 = new SpravaMazlicku();
+                            mlem4.druhovec(mazlicci);
+                            break;
+
                     }
                     break;
             }
